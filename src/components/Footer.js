@@ -3,20 +3,27 @@ import { links } from "./Navbar/Navbardata";
 
 function Footer() {
   return (
-    <footer>
-      <ul className="Nav-social flex justify-between md:w-[70%]">
-        {links.map((item) => (
-          <li key={item.title} className="">
-            <a
-              href="https://www.linkedin.com/in/chibuike-ewenike-960599172/"
-              className=""
+    <footer className="text-center py-[90px] m:py-[120px]">
+      <div>
+        <p className="text-[0.875rem] text-[#898989] tracking-[0.03em] leading-[1.25rem]">
+          &copy; 2023 Cr8v. ALL RIGHTS RESERVED.
+        </p>
+        <ul className="mt-[10px] md:w-[70%]">
+          {links.map((item) => (
+            <li
+              key={item.title}
+              className="inline-block w-[36px] mx-[6px] h-[36px] "
             >
-              <item.title className="nav-svg" />
-            </a>
-          </li>
-        ))}
-      </ul>
-      <p>&copy; 2023 Cre8tive. ALL RIGHTS RESERVED.</p>
+              <a
+                href="https://www.linkedin.com/in/chibuike-ewenike-960599172/"
+                className=""
+              >
+                <item.title size={18} className="text-[#898989]" />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </footer>
   );
 }

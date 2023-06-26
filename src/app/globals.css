@@ -33,3 +33,7 @@ a {
 .activeitem {
   box-shadow: inset 0 -6px 0 #ede574;
 }
+/* .elementanimate:hover {
+  transform: translateY(-10px);
+  transition: all ease-in-out 0.5s;
+} */

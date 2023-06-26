@@ -5,7 +5,7 @@ export const LatestWorksData = [
       "Quick six blind smart out burst. Perfectly on furniture dejection determine my depending an to. Add short water court fat.",
     Img: "",
     name: "Chidimma Orjiakor",
-    date: "",
+    date: "27 May 2023",
     url: "https://bslthemes.com/html/hendrie/default/images/blog/blog1.png",
   },
   {
@@ -14,7 +14,7 @@ export const LatestWorksData = [
       "Quick six blind smart out burst. Perfectly on furniture dejection determine my depending an to. Add short water court fat.",
     Img: "",
     name: "Helen Akintola",
-    date: "",
+    date: "20 June 2019",
     url: "https://bslthemes.com/html/hendrie/default/images/blog/blog2.png",
   },
   {
@@ -23,7 +23,7 @@ export const LatestWorksData = [
       "Quick six blind smart out burst. Perfectly on furniture dejection determine my depending an to. Add short water court fat.",
     Img: "",
     name: "Tife Okiola",
-    date: "",
+    date: "7 September 2016",
     url: "https://bslthemes.com/html/hendrie/default/images/blog/blog3.png",
   },
 ];
