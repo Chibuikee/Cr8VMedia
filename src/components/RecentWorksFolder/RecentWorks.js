@@ -1,0 +1,73 @@
+"use client";
+import React, { useState } from "react";
+import { RecentWroksData } from "./data";
+import Image from "next/image";
+
+function RecentWorks() {
+  const [pickedItems, setPickedItems] = useState(null);
+  const [active, setActive] = useState("All");
+  const RecentItems = [
+    { title: "All", url: "" },
+    { title: "Branding", url: "" },
+    { title: "Mockups", url: "" },
+    { title: "UI Kits", url: "" },
+    { title: "Photography", url: "" },
+  ];
+
+  function moveItemToFirst(recentWorks, ClickedItem) {
+    // console.log(recentWorks, ClickedItem);
+    const filteredItems =
+      ClickedItem === "All"
+        ? recentWorks
+        : recentWorks.filter((item) => item.title === ClickedItem);
+    if (filteredItems.length !== -1) {
+      setPickedItems(filteredItems);
+      setActive(ClickedItem);
+    }
+  }
+  return (
+    <section className="pt-[90px] pb-[60px]">
+      <div className="px-[5%] max-w-[100%]">
+        <h1 className="text-[1.75rem] mb-[30px] leading-[44px] font-normal tracking-[0]">
+          Recent Works
+        </h1>
+        <div className="md:flex gap-2 mb-[30px]">
+          {RecentItems.map((data, key) => (
+            <div
+              onClick={() => moveItemToFirst(RecentWroksData, data.title)}
+              key={data.title + key}
+              className="pr-[30px] llg:pr-[60px] xxs:pb-[0px] pb-[15px] inline-block"
+            >
+              <h4
+                className={`text-[#898989] ${
+                  active == data.title && "activeitem"
+                } text-[0.9375rem] leading-[8px] font-light`}
+              >
+                {data.title}
+              </h4>
+            </div>
+          ))}
+        </div>
+        <div className="md:grid grid-cols-2 pb-[50px] m:w-[49.998%]">
+          {(pickedItems || RecentWroksData).map((data, key) => (
+            <div key={data.title + key} className="mb-[30px] llg:mb-[70px]">
+              <Image
+                src={data.Img}
+                width={500}
+                height={500}
+                alt={data.title}
+                className="cursor-pointer"
+              />
+              <h3 className="activeitem inline-block leading-[12px] cursor-pointer text-[#898989] llg:text-[0.875rem] text-[0.75rem] mt-[20px] mb-[10px]">
+                {data.title}
+              </h3>
+              <h1 className="cursor-pointer">{data.description}</h1>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default RecentWorks;
