@@ -8,7 +8,10 @@ function Hero({ setIntersecting }) {
   //   console.log(isvisible, "from intro page");
   return (
     <section>
-      <div ref={ref} className="bg-[red] text-[5rem]">
+      <div
+        ref={ref}
+        className="bg-[#070303] text-[#ffffff] text-[5rem] mx-[15px]"
+      >
         Hero
       </div>
     </section>
