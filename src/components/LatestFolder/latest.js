@@ -5,11 +5,11 @@ import { LatestWorksData } from "./data";
 function Latest() {
   return (
     <section className="pt-[90px] pb-[60px] m:pt-[180px] m:pb-[110px] bg-[#f9f9f9]">
-      <div className="px-[5%] llg:max-w-[1020px]">
+      <div className="px-[5%] llg:max-w-[1020px] mx-auto">
         <h2 className="text-[1.75rem] mb-[30px] llg:text-[2.125rem] llg:leading-[2.75rem] font-normal">
           Latest Blogs
         </h2>
-        <div className="md:flex">
+        <div className="md:flex gap-5">
           {LatestWorksData.map((data) => (
             <div key={data.name}>
               <Image

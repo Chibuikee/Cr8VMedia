@@ -48,19 +48,23 @@ function RecentWorks() {
             </div>
           ))}
         </div>
-        <div className="md:grid grid-cols-2 pb-[50px] ">
+        <div className="m:grid grid-cols-2 gap-[50px] pb-[50px]">
           {(pickedItems || RecentWroksData).map((data, key) => (
             <div
               key={data.title + key}
-              className="mb-[30px] llg:mb-[70px] m:w-[49.998%] transition ease-in-out hover:translate-y-[-10px] duration-1000"
+              className="mb-[30px] llg:mb-[70px] transition ease-in-out hover:translate-y-[-10px] duration-1000"
             >
-              <Image
-                src={data.Img}
-                width={500}
-                height={500}
-                alt={data.title}
-                className="cursor-pointer"
-              />
+              <div className="relative">
+                <Image
+                  src={data.Img}
+                  width={700}
+                  height={500}
+                  // fill={true}
+                  alt={data.title}
+                  obj
+                  className="cursor-pointer"
+                />
+              </div>
               <h3 className="activeitem inline-block leading-[12px] cursor-pointer text-[#898989] llg:text-[0.875rem] text-[0.75rem] mt-[20px] mb-[10px]">
                 {data.title}
               </h3>
