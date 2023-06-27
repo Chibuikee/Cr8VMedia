@@ -1,30 +1,16 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { links, NavMenuList } from "./Navbardata";
 import { HiMenu, HiX } from "react-icons/hi";
-import useOnScreen from "../hooks";
-function Navbar() {
-  const [navBarToggle, setNavBarToggle] = useState(null);
-  //   useEffect(() => {
-  //     const w = () => {
-  //       window.innerWidth === 800 && setNavBarToggle(true);
-  //     };
-  //     window.addEventListener("resize", w);
-  //     return () => {
-  //       window.removeEventListener("resize", w);
-  //     };
-  //   }, []);
-  const ref = useRef();
-  const isVisible = useOnScreen(ref);
-  const bg = { backgroundColor: `${!isVisible ? "black" : ""}` };
-  // return <div ref={ref}>{isVisible && `Yep, I'm on screen`}</div>
 
-  // const navtogglerStyle = {
-  //   // transform: `translate(${navBarToggle ? "0" : "1000%"})`,
-  // };
+function Navbar({ isvisible }) {
+  const [navBarToggle, setNavBarToggle] = useState(null);
+
+  const bg = { backgroundColor: `${!isvisible ? "white" : "red"}` };
+
   return (
     <nav className="py-[30px] lg:py-[50px] sticky top-0  w-[90%] mx-auto sm:max-w-[600px] md:max-w-[760px] lg:max-w-[1010px] xl:max-w-[1280px]">
-      <h1 ref={ref} className="logo" translate="no">
+      <h1 className="logo" translate="no">
         BUZO
       </h1>
       <div className="md:w-[500px] absolute right-[0] top-[30px]">

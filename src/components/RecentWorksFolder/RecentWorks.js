@@ -59,9 +59,7 @@ function RecentWorks() {
                   src={data.Img}
                   width={700}
                   height={500}
-                  // fill={true}
                   alt={data.title}
-                  obj
                   className="cursor-pointer"
                 />
               </div>

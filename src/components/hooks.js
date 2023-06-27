@@ -1,17 +1,14 @@
 "use client";
-import { useEffect, useState } from "react";
-
-export default function useOnScreen(ref) {
-  const [isIntersecting, setIntersecting] = useState(false);
-
+import { useEffect } from "react";
+export default function useOnScreen(ref, setIntersecting) {
+  let observer;
   useEffect(() => {
-    let observer;
-
     if (typeof IntersectionObserver !== "undefined") {
       observer = new IntersectionObserver(([entry]) => {
         setIntersecting(entry.isIntersecting);
       });
-      observer.observe(ref.current);
+      console.log(ref);
+      observer.observe(ref?.current);
     }
 
     // Remove the observer as soon as the component is unmounted
@@ -20,7 +17,6 @@ export default function useOnScreen(ref) {
         observer.disconnect();
       }
     };
-  }, [ref]);
-
-  return isIntersecting;
+  }, [ref, observer]);
+  // return isIntersecting;
 }

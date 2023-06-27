@@ -10,7 +10,7 @@ function ContactUs() {
             Subscribe and contact me for super captivating content and make
             yourself fulfilled!
           </p>
-          <div className=" ">
+          <div className="m:grid grid-cols-2 ">
             <input
               className="w-[99.996%] outline-none leading-[48px] m:w-[49.998%] mb-[25px] text-[0.875rem] border-b-[1px]"
               type="text"
@@ -27,14 +27,14 @@ function ContactUs() {
               placeholder="Mobile Number"
             />
             <textarea
-              className="w-[99.996%] h-[120px] outline-none py-[20px] leading-[48px] m:w-[49.998%] mb-[25px] text-[0.875rem] border-b-[1px]"
+              className="w-[99.996%] outline-none  leading-[48px] m:w-[49.998%] mb-[25px] text-[0.875rem] border-b-[1px]"
               type="message"
               placeholder="Message"
             />
-            <button className="mx-auto activeitem duration-[0.3s] pt-[2px] text-[0.75rem] leading-[12px] tracking-[0.2em] cursor-pointer inline-block w-[fit-content]">
-              SEND MESSAGE
-            </button>
           </div>
+          <button className="mx-auto activeitem duration-[0.3s] pt-[2px] text-[0.75rem] leading-[12px] tracking-[0.2em] cursor-pointer inline-block w-[fit-content]">
+            SEND MESSAGE
+          </button>
         </div>
       </div>
     </section>
