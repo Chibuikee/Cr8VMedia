@@ -45,26 +45,29 @@ a {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  /* background: #343f4f; */
 }
 .wrapper {
-  display: flex;
+  display: inline-flex;
+  /* width: auto; */
 }
 .wrapper .static-txt {
   color: #fff;
-  font-size: 60px;
+  font-size: clamp(1.25rem, 1vw + 1.5rem, 3.75rem);
   font-weight: 400;
+  /* height: 90px; */
+  display: inline-flex;
+  align-items: center;
 }
 .wrapper .dynamic-txts {
   margin-left: 15px;
   height: 90px;
-  line-height: 90px;
+  /* line-height: 90px; */
   overflow: hidden;
 }
 .dynamic-txts li {
   list-style: none;
   color: #fc6d6d;
-  font-size: 60px;
+  font-size: clamp(1.25rem, 1vw + 1.5rem, 3.75rem);
   font-weight: 500;
   position: relative;
   top: 0;
@@ -82,6 +85,7 @@ a {
 }
 .dynamic-txts li span::after {
   content: "";
+  top: 0;
   position: absolute;
   left: 0;
   height: 100%;
@@ -91,11 +95,12 @@ a {
   animation: typing 3s steps(10) infinite;
 }
 @keyframes typing {
-  40%,
+  /* 40%,
   60% {
     left: calc(100% + 30px);
-  }
+  } */
   100% {
-    left: 0;
+    left: 100%;
+    margin: 0 -35px 0 35px;
   }
 }

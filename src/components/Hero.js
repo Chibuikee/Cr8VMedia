@@ -7,12 +7,15 @@ function Hero({ setIntersecting }) {
   useOnScreen(ref, setIntersecting);
   //   console.log(isvisible, "from intro page");
   return (
-    <section className="hero bg-[#070303]">
-      <div ref={ref} className=" text-[#ffffff] wrapper">
+    <section ref={ref} className="hero  bg-[#070303]">
+      {/* <span  className="absolute top-0">
+        .
+      </span> */}
+      <div className=" text-[#ffffff] wrapper">
         <div className="static-txt">I`m a</div>
         <ul className="dynamic-txts">
           <li>
-            <span>YouTuber</span>
+            <span>Lawyer</span>
           </li>
           <li>
             <span>Designer</span>
