@@ -21,7 +21,7 @@ function Navbar({ isvisible }) {
           className={`logo ${isvisible ? "text-white" : "text-black"}`}
           translate="no"
         >
-          BUZO
+          Cr8vMedia
         </h1>
         <div className="md:w-[500px] overflow-hidden absolute right-[15px] top-[30px]">
           <div
