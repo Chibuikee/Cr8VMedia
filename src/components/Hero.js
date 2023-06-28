@@ -12,7 +12,7 @@ function Hero({ setIntersecting }) {
         .
       </span> */}
       <div className=" text-[#ffffff] wrapper">
-        <div className="static-txt">I`m a</div>
+        {/* <div className="static-txt">I`m a</div> */}
         <ul className="dynamic-txts">
           <li>
             <span>Lawyer</span>

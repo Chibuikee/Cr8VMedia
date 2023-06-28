@@ -12,7 +12,7 @@ function Navbar({ isvisible }) {
     <nav
       className={`py-[30px] lg:py-[50px] ${
         isvisible ? "bg-black" : "bg-white"
-      }  lg:py-[50px] sticky top-0`}
+      }  lg:py-[50px] sticky top-0 z-[99]`}
     >
       <div
         className={`w-[90%] mx-auto sm:max-w-[600px] md:max-w-[760px] lg:max-w-[1010px] xl:max-w-[1280px]`}
@@ -23,10 +23,10 @@ function Navbar({ isvisible }) {
         >
           Cr8vMedia
         </h1>
-        <div className="md:w-[500px] overflow-hidden absolute right-[15px] top-[30px]">
+        <div className="md:w-[500px] overflow-hidden absolute  right-0 md:right-[15px] top-0 md:top-[30px]">
           <div
             onClick={() => setNavBarToggle(!navBarToggle)}
-            className="w-[30px] menuToggle ml-auto md:hidden absolute top-0 right-0"
+            className="w-[30px] menuToggle ml-auto md:hidden absolute top-[25px] right-[20px]"
             style={bg}
           >
             {!navBarToggle && (
@@ -42,21 +42,27 @@ function Navbar({ isvisible }) {
             // style={navtogglerStyle}
             className={`Nav-main pl-[30px] ${
               navBarToggle ? "" : "translate-x-[200%]"
-            } md:translate-x-0 flex transition ease-in-out duration-1000 relative`}
+            } md:translate-x-0 flex transition ease-in-out duration-1000  relative`}
           >
             {navBarToggle && (
               <HiX
                 size={30}
                 onClick={() => setNavBarToggle(!navBarToggle)}
-                className={` menuToggle-icon md:hidden ${
+                className={` menuToggle-icon absolute top-[25px] left-0 md:hidden ${
                   isvisible ? "text-white" : "text-black"
                 } menuToggle-icon`}
               />
             )}
-            <ul className="Nav-menu bg-[#ffffff]  px-[30px] md:flex md:justify-between w-[200px] md:w-[500px]">
+            <ul
+              className={`Nav-menu pt-[25px] md:pt-0 ${
+                isvisible ? "md:bg-[black] bg-white" : "bg-[#ffffff]"
+              }   px-[30px] md:flex md:justify-between h-[100vh] md:h-[initial] w-[200px] md:w-[500px]`}
+            >
               {NavMenuList.childList.map((item, key) => (
                 <li
-                  className={`logo ${isvisible ? "text-black" : "text-white"}`}
+                  className={`nav-link py-2 md:py-0 ${
+                    isvisible ? "text-black md:text-[white]" : "text-black"
+                  }`}
                   key={key}
                 >
                   <a href={item.url}>{item.name}</a>

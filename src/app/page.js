@@ -11,7 +11,7 @@ import Hero from "../components/Hero";
 export default function Home() {
   const [isIntersecting, setIntersecting] = useState(false);
   return (
-    <main className=" relative ">
+    <main className="relative ">
       <Navbar isvisible={isIntersecting} />
       <Hero setIntersecting={setIntersecting} />
       <Intro />
