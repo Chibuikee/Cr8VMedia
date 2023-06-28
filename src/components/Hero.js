@@ -9,7 +9,7 @@ function Hero({ setIntersecting }) {
   return (
     <section className="hero bg-[#070303]">
       <div ref={ref} className=" text-[#ffffff] wrapper">
-        <div className="static-txt">I'm a</div>
+        <div className="static-txt">I`m a</div>
         <ul className="dynamic-txts">
           <li>
             <span>YouTuber</span>
