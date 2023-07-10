@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import useOnScreen from "./hooks";
+import { HiChevronDown } from "react-icons/hi";
 
 function Hero({ setIntersecting }) {
   const ref = useRef();
@@ -16,7 +17,7 @@ function Hero({ setIntersecting }) {
     "Media Consultancy",
   ];
   return (
-    <section ref={ref} className="hero  bg-[#070303]">
+    <section ref={ref} className="hero  bg-[#070303] relative">
       {/* <span  className="absolute top-0">
         .
       </span> */}
@@ -32,6 +33,11 @@ function Hero({ setIntersecting }) {
             </li>
           ))}
         </ul>
+      </div>
+      <div className="absolute left-[50%] btn-anime ml-[-15px]">
+        <a href="#Intro">
+          <HiChevronDown className="text-[green]" size={30} />
+        </a>
       </div>
     </section>
   );

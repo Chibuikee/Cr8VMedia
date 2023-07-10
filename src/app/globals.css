@@ -106,3 +106,18 @@ a {
     margin: 0 -35px 0 35px;
   }
 }
+
+.btn-anime {
+  bottom: 70px;
+  animation: movingArrow 0.5s linear alternate infinite;
+  /* transition: all 1s ease-in-out; */
+}
+@keyframes movingArrow {
+  /* 40%,
+  60% {
+    left: calc(100% + 30px);
+  } */
+  100% {
+    bottom: 100px;
+  }
+}

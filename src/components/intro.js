@@ -3,7 +3,7 @@ import React from "react";
 
 function Intro() {
   return (
-    <section className="py-[90px]">
+    <section className="py-[90px]" id="Intro">
       <div className="px-[5%]">
         <h3 className="text-[1.75rem] lg:text-[3.25rem] font-[eczar] leading-10 lg:leading-[4rem] font-normal mb-[28px]">
           I`m Chibuike Ewenike, Web Designer & Web Developer from United States,

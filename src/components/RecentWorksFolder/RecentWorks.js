@@ -41,7 +41,7 @@ function RecentWorks() {
               <h4
                 className={`text-[#898989] ${
                   active == data.title && "activeitem"
-                } text-[0.9375rem] leading-[8px] font-light`}
+                } text-[0.9375rem] leading-[8px] font-light cursor-pointer`}
               >
                 {data.title}
               </h4>
