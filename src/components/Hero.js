@@ -36,7 +36,7 @@ function Hero({ setIntersecting }) {
       </div>
       <div className="absolute left-[50%] btn-anime ml-[-15px]">
         <a href="#Intro">
-          <HiChevronDown className="text-[green]" size={30} />
+          <HiChevronDown className="text-[green] cursor-pointer" size={30} />
         </a>
       </div>
     </section>
