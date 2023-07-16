@@ -9,13 +9,21 @@ function Hero({ setIntersecting }) {
   //   console.log(isvisible, "from intro page");
 
   const servivesProvided = [
-    "Video documentaries",
-    "Photo documentaries",
-    "Prints",
-    "Corporate videos",
-    "Event Coverage",
-    "Media Consultancy",
+    "WEB DESIGN",
+    "MOBILE APPS",
+    "ANALYTICS",
+    "BRAND IDENTITY",
+    "UI/UX DESIGN",
+    "Web Consultancy",
   ];
+  // const servivesProvided = [
+  //   "Video documentaries",
+  //   "Photo documentaries",
+  //   "Prints",
+  //   "Corporate videos",
+  //   "Event Coverage",
+  //   "Media Consultancy",
+  // ];
   return (
     <section ref={ref} className="hero  bg-[#070303] relative">
       {/* <span  className="absolute top-0">

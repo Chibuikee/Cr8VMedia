@@ -2,10 +2,12 @@
 import React, { useState } from "react";
 import { RecentWroksData } from "./data";
 import Image from "next/image";
+import PopUp from "./popUp";
 
 function RecentWorks() {
   const [pickedItems, setPickedItems] = useState(null);
   const [active, setActive] = useState("All");
+  const [activePopUp, setPopUp] = useState(true);
   const RecentItems = [
     { title: "All", url: "" },
     { title: "Branding", url: "" },
@@ -27,6 +29,7 @@ function RecentWorks() {
   }
   return (
     <section className="pt-[90px] pb-[60px]">
+      {activePopUp && <PopUp setPopUp={{ setPopUp, activePopUp }} />}
       <div className="px-[5%] max-w-[100%]">
         <h1 className="text-[1.75rem] mb-[30px] leading-[44px] font-normal tracking-[0]">
           Recent Works
@@ -55,17 +58,21 @@ function RecentWorks() {
               className="mb-[30px] llg:mb-[70px] transition ease-in-out hover:translate-y-[-10px] duration-1000"
             >
               <div className="relative">
-                <Image
-                  src={data.Img}
-                  width={700}
-                  height={500}
-                  alt={data.title}
-                  className="cursor-pointer"
-                />
+                <a href="#popUp">
+                  <Image
+                    src={data.Img}
+                    width={700}
+                    height={500}
+                    alt={data.title}
+                    onClick={() => setPopUp(data)}
+                    className="cursor-pointer"
+                  />
+                </a>
               </div>
               <h3 className="activeitem inline-block leading-[12px] cursor-pointer text-[#898989] llg:text-[0.875rem] text-[0.75rem] mt-[20px] mb-[10px]">
                 {data.title}
               </h3>
+
               <h1 className="cursor-pointer text-[1.375rem] font-light leading-[1.875rem] llg:text-[1.75rem]">
                 {data.description}
               </h1>
