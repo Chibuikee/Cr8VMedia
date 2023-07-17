@@ -24,7 +24,7 @@ function Navbar({ isvisible }) {
           className={`logo ${isvisible ? "text-white" : "text-black"}`}
           translate="no"
         >
-          Cr8vMedia
+          Cr8VibeMedia
         </h1>
         <div
           // pointerEvents is used to disable events on this elements so that elements below it can be clickable
