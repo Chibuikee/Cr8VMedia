@@ -121,3 +121,18 @@ a {
     bottom: 100px;
   }
 }
+
+#popUp {
+  width: 620px;
+}
+
+@media screen and (max-width: 580px) {
+  #popUp {
+    width: 440px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #popUp {
+    width: 320px;
+  }
+}

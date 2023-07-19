@@ -1,18 +1,18 @@
 import Image from "next/image";
-
+import { HiX } from "react-icons/hi";
 function PopUp({ setPopUp }) {
   return (
     <div
       onClick={() => setPopUp.setPopUp(null)}
-      className="h-[8000px] absolute  z-[10] top-0 bg-[#fffcfcab] w-full"
+      className="h-[8000px] absolute  z-[10] top-0 bg-[#fffcfcb7] w-full"
     >
       <div
         id="popUp"
-        className="bg-[#ffffff] z-[8] mt-[200px] relative h-scree top-[50vw] mx-auto px-[10px] w-[320px] s480:w-[440px] x580:max-w-[620px] "
+        className="bg-[#ffffff] rounded-[10px] shadow-[0_25px_50px_rgba(0,0,0,0.045)] z-[8] mt-[200px] relative top-[50vw] mx-auto px-[10px] "
       >
         DETIALS page under development check back later
         <br />
-        <h1>CLICK TO CLOSE !</h1>
+        <HiX size={20} className="absolute top-5 right-3" />
         <div className="relative">
           <Image
             src={setPopUp?.activePopUp?.Img}

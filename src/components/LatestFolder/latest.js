@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { LatestWorksData } from "./data";
+import Link from "next/link";
 
 function Latest() {
   return (
@@ -12,17 +13,22 @@ function Latest() {
         <div className="md:flex gap-5">
           {LatestWorksData.map((data) => (
             <div key={data.name}>
-              <Image
-                src={data.url}
-                loading="lazy"
-                width={400}
-                height={400}
-                alt={data.name}
-                className="mb-[25px]"
-              />
-              <h3 className="text-[1.1875rem] leading-[1.5rem] font-medium text-[#292929] cursor-pointer mb-[13px]">
-                {data.title}
-              </h3>
+              <Link href={`blog/${data.name}`}>
+                {" "}
+                <Image
+                  src={data.url}
+                  loading="lazy"
+                  width={400}
+                  height={400}
+                  alt={data.name}
+                  className="mb-[25px]"
+                />
+              </Link>
+              <Link href={`blog/${data.name}`}>
+                <h3 className="text-[1.1875rem] leading-[1.5rem] font-medium text-[#292929] cursor-pointer mb-[13px]">
+                  {data.title}
+                </h3>
+              </Link>
               <p className="text-[0.875rem] leading-[1.5rem] font-light text-[#999999] cursor-pointer mb-[13px]">
                 {data.description}
               </p>
