@@ -1,4 +1,5 @@
-import FixedBtn from "../../components/fixedBtn";
+import FixedBtn from "@/components/fixedBtn";
+import "../../globals.css";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -8,12 +9,12 @@ export const metadata = {
   description: "Portfolio of Chibuzo a Media Creative with a decade experience",
 };
 
-export default function RootLayout({ children }) {
+export default function BlogLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
         {children}
-        <FixedBtn />
+        {/* <FixedBtn /> */}
       </body>
     </html>
   );

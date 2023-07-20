@@ -1,21 +1,42 @@
 "use client";
 import Image from "next/image";
 import { IntroData, paragraphs } from "./data";
-import { useRouter } from "next/router";
 import { LatestWorksData } from "../LatestFolder/data";
+import useOnScreen from "../hooks";
+import { useRef } from "react";
+import { useParams } from "next/navigation";
 
-function IntroSection() {
-  const route = useRouter();
+function IntroSection({ setIntersecting }) {
+  const ref = useRef();
+  useOnScreen(ref, setIntersecting);
+  const route = useParams();
+  const params = decodeURIComponent(route?.blog);
   const otherBlogPostsImg = LatestWorksData.filter(
-    (item) => item.name !== route.query?.blogPost
+    (item) => item.name !== params
   );
-  console.log("look at this", otherBlogPostsImg);
+  const BlogPoster = LatestWorksData.find((item) => item.name == params);
+  console.log("look at this");
   return (
     <section>
+      <div className="relative ">
+        {/* <div className="absolute top-0 left-0  right-0 h-full w-full">
+        </div> */}
+        <Image
+          ref={ref}
+          src={BlogPoster?.url}
+          width={500}
+          height={500}
+          alt="blog post"
+          className="blur-[1px]"
+        />
+        <h1 className="text-center absolute top-[50%] left-0 right-0 mx-auto text-[red]">
+          BLOG POST
+        </h1>
+      </div>
       <div className="px-[25px]">
         {IntroData.map((item, key) => (
           <div key={key}>
-            <h1>{item.heading}</h1>
+            <h1 className="my-10">{item.heading}</h1>
             <time>{item.date} </time>
             <Image
               src={item.img}

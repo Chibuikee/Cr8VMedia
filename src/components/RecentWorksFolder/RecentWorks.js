@@ -7,7 +7,7 @@ import PopUp from "./popUp";
 function RecentWorks() {
   const [pickedItems, setPickedItems] = useState(null);
   const [active, setActive] = useState("All");
-  const [activePopUp, setPopUp] = useState(true);
+  const [activePopUp, setPopUp] = useState(false);
   const RecentItems = [
     { title: "All", url: "" },
     { title: "Branding", url: "" },
