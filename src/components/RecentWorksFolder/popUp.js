@@ -8,7 +8,7 @@ function PopUp({ setPopUp }) {
     >
       <div
         id="popUp"
-        className="bg-[#ffffff] rounded-[10px] shadow-[0_25px_50px_rgba(0,0,0,0.045)] z-[8] mt-[200px] relative top-[50vw] mx-auto px-[10px] "
+        className="bg-[#ffffff00] rounded-[10px] shadow-[0_25px_50px_rgba(0,0,0,0.045)] z-[8] mt-[200px] relative top-[40%] mx-auto px-[10px] "
       >
         <div className="relative pt-10">
           <div className="absolute bg-[white] h-[30px] w-[30px] top-10 right-0">
@@ -22,7 +22,7 @@ function PopUp({ setPopUp }) {
             className="cursor-pointer"
           />
         </div>
-        <div className="py-[30px]">
+        <div className="py-[30px] h-full bg-[#ffffff]">
           <h3 className="activeitem mx-[20px] inline-block leading-[12px] cursor-pointer text-[#898989] llg:text-[0.875rem] text-[0.75rem] mt-[20px] mb-[10px]">
             {setPopUp?.activePopUp?.title}
           </h3>
