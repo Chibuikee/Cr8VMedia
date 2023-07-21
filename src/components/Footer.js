@@ -6,7 +6,7 @@ function Footer() {
     <footer className="text-center py-[90px] m:py-[120px]">
       <div>
         <p className="text-[0.875rem] text-[#898989] font-light tracking-[0.03em] leading-[1.25rem]">
-          &copy; 2023 Cr8v. ALL RIGHTS RESERVED.
+          &copy; 2023 CR8VIBE MEDIA. ALL RIGHTS RESERVED.
         </p>
         <ul className="mt-[10px] md:w-[70%] mx-auto">
           {links.map((item) => (

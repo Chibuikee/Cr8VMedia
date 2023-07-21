@@ -26,7 +26,7 @@ function Navbar({ isvisible }) {
             className={`logo ${isvisible ? "text-white" : "text-black"}`}
             translate="no"
           >
-            Cr8VibeMedia
+            CR8VIBE MEDIA
           </h1>
         </Link>
         <div
