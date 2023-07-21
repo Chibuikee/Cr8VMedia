@@ -69,13 +69,19 @@ function RecentWorks() {
                   />
                 </a>
               </div>
+
               <h3 className="activeitem inline-block leading-[12px] cursor-pointer text-[#898989] llg:text-[0.875rem] text-[0.75rem] mt-[20px] mb-[10px]">
                 {data.title}
               </h3>
 
-              <h1 className="cursor-pointer text-[1.375rem] font-light leading-[1.875rem] llg:text-[1.75rem]">
-                {data.description}
-              </h1>
+              <a href="#popUp">
+                <h1
+                  onClick={() => setPopUp(data)}
+                  className="cursor-pointer text-[1.375rem] font-light leading-[1.875rem] llg:text-[1.75rem]"
+                >
+                  {data.description}
+                </h1>
+              </a>
             </div>
           ))}
         </div>
