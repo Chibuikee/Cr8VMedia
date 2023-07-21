@@ -26,7 +26,14 @@ module.exports = {
       xl: "1280px",
       xxl: "1536px",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-hind)"],
+        hind: "'Hind', helvetica",
+        montserrat: "'Montserrat', sans-serif",
+        eczar: "'Eczar', helvetica",
+      },
+    },
   },
   plugins: [],
 };
