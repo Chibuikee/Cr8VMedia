@@ -8,12 +8,12 @@ import {
 export const NavMenuList = {
   title: { name: "PRODUCT", url: "/Shop" },
   childList: [
-    { name: "Home", url: "/Home" },
-    { name: "About", url: "/About" },
-    { name: "Services", url: "/Services" },
-    { name: "Works", url: "/Works" },
-    { name: "Clients", url: "/Clients" },
-    { name: "Contact", url: "/Contact" },
+    { name: "Home", url: "Hero" },
+    { name: "About", url: "Intro" },
+    { name: "Services", url: "Services" },
+    { name: "Works", url: "Works" },
+    { name: "Clients", url: "Clients" },
+    { name: "Contact", url: "Contact" },
   ],
   text: "Perspiciatis hic praesentium nesciunt. Et neque a dolorum voluptatem porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.",
 };

@@ -2,7 +2,7 @@ import React from "react";
 import { servicesData } from "./data";
 function Services() {
   return (
-    <section className="pt-[90px] pb-[60px] bg-[#f9f9f9]">
+    <section id="Services" className="pt-[90px] pb-[60px] bg-[#f9f9f9]">
       <div className="px-[5%] max-w-full mx-auto lg:max-w-[1020px]">
         <h3 className="font-[Eczar] mb-[30px] text-[1.75rem] font-normal text-[#292929] leading-[2.75rem]">
           What I Do

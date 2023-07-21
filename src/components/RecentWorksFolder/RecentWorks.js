@@ -28,7 +28,7 @@ function RecentWorks() {
     }
   }
   return (
-    <section className="pt-[90px] pb-[60px]">
+    <section id="Works" className="pt-[90px] pb-[60px]">
       {activePopUp && <PopUp setPopUp={{ setPopUp, activePopUp }} />}
       <div className="px-[5%] max-w-[100%]">
         <h1 className="text-[1.75rem] mb-[30px] leading-[44px] font-normal tracking-[0]">

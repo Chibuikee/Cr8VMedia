@@ -25,7 +25,7 @@ function Hero({ setIntersecting }) {
   //   "Media Consultancy",
   // ];
   return (
-    <section ref={ref} className="hero  bg-[#070303] relative">
+    <section ref={ref} id="Hero" className="hero  bg-[#070303] relative">
       {/* <span  className="absolute top-0">
         .
       </span> */}

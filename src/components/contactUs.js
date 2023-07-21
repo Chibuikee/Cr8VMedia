@@ -1,6 +1,6 @@
 function ContactUs() {
   return (
-    <section className="py-[90px] m:py-[120px] lg:max-w-[900px] ">
+    <section id="Contact" className="py-[90px] m:py-[120px] lg:max-w-[900px] ">
       <div className="px-[5%] llg:max-w-[1020px] mx-auto">
         <h1 className=" text-[1.75rem] mb-[30px] text-[#292929] font-normal">
           Contact Me

@@ -5,7 +5,10 @@ import Link from "next/link";
 
 function Latest() {
   return (
-    <section className="pt-[90px] pb-[60px] m:pt-[180px] m:pb-[110px] bg-[#f9f9f9]">
+    <section
+      id="Clients"
+      className="pt-[90px] pb-[60px] m:pt-[180px] m:pb-[110px] bg-[#f9f9f9]"
+    >
       <div className="px-[5%] llg:max-w-[1020px] mx-auto">
         <h2 className="text-[1.75rem] mb-[30px] llg:text-[2.125rem] llg:leading-[2.75rem] font-normal">
           Latest Blogs

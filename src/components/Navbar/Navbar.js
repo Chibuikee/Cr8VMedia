@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { links, NavMenuList } from "./Navbardata";
 import { HiMenu, HiX } from "react-icons/hi";
+import Link from "next/link";
 
 function Navbar({ isvisible }) {
   const [navBarToggle, setNavBarToggle] = useState(null);
@@ -20,12 +21,14 @@ function Navbar({ isvisible }) {
       <div
         className={`w-[90%] mx-auto sm:max-w-[600px] md:max-w-[760px] lg:max-w-[1010px] xl:max-w-[1280px]`}
       >
-        <h1
-          className={`logo ${isvisible ? "text-white" : "text-black"}`}
-          translate="no"
-        >
-          Cr8VibeMedia
-        </h1>
+        <Link href="/">
+          <h1
+            className={`logo ${isvisible ? "text-white" : "text-black"}`}
+            translate="no"
+          >
+            Cr8VibeMedia
+          </h1>
+        </Link>
         <div
           // pointerEvents is used to disable events on this elements so that elements below it can be clickable
           style={{ pointerEvents: "none" }}
@@ -72,7 +75,7 @@ function Navbar({ isvisible }) {
                   }`}
                   key={key}
                 >
-                  <a href={item.url} className="cursor-pointer">
+                  <a href={`#${item.url}`} className="cursor-pointer">
                     {item.name}
                   </a>
                 </li>

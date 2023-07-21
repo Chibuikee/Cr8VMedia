@@ -6,7 +6,7 @@ import useOnScreen from "../hooks";
 import { useRef } from "react";
 import { useParams } from "next/navigation";
 
-function IntroSection({ setIntersecting, ...params }) {
+function IntroSection({ setIntersecting }) {
   const ref = useRef();
   useOnScreen(ref, setIntersecting);
   const route = useParams();
@@ -15,7 +15,7 @@ function IntroSection({ setIntersecting, ...params }) {
     (item) => item.name !== params11
   );
   const BlogPoster = LatestWorksData.find((item) => item.name == params11);
-  console.log("look at this", params);
+  // console.log("look at this", params);
   return (
     <section>
       <div className="relative ">
