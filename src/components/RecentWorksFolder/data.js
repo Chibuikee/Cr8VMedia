@@ -1,6 +1,6 @@
 export const RecentWroksData = [
   {
-    title: "Mockups",
+    title: "Videos",
     description: "Shopping Bag PSD MockUp",
     Img: "https://i.ibb.co/TLnssgm/images-1683984188970.jpg",
     // Img: "https://bslthemes.com/html/hendrie/default/images/works/work1.jpg",
@@ -18,7 +18,7 @@ export const RecentWroksData = [
       "Mapogo is an expertly crafted UI kit perfect for iOS designers and developers. The free sample includes 10 screens (750x1334 px) that can be easily customized in Photoshop",
   },
   {
-    title: "Mockups",
+    title: "Photos",
     description: "Realistic Business Cards",
     Img: "https://i.ibb.co/yRtLYDz/IMG-20210707-WA0035.jpg",
     // Img: "https://bslthemes.com/html/hendrie/default/images/works/work3.jpg",
@@ -46,7 +46,7 @@ export const RecentWroksData = [
       "Mapogo is an expertly crafted UI kit perfect for iOS designers and developers. The free sample includes 10 screens (750x1334 px) that can be easily customized in Photoshop",
   },
   {
-    title: "UI Kits",
+    title: "Events",
     description: "A4 Paper PSD",
     Img: "https://bslthemes.com/html/hendrie/default/images/works/work2.jpg",
 
