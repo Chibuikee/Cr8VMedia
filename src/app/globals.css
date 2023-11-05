@@ -61,7 +61,7 @@ a {
   font-weight: 500;
   position: relative;
   top: 0;
-  animation: slide 18s steps(6) infinite;
+  animation: slide 16s steps(6) infinite;
   margin-left: 35px;
 }
 @keyframes slide {
@@ -73,7 +73,7 @@ a {
   text-transform: uppercase;
   position: relative;
   margin: 5px 0;
-  line-height: 90px;
+  /* line-height: 90px; */
 }
 .dynamic-txts li span::after {
   content: "";

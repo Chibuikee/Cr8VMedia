@@ -9,12 +9,12 @@ function Hero({ setIntersecting }) {
   //   console.log(isvisible, "from intro page");
 
   const servivesProvided = [
-    "WEB DESIGN",
-    "MOBILE APPS",
-    "ANALYTICS",
-    "BRAND IDENTITY",
-    "UI/UX DESIGN",
-    "Web Consultancy",
+    "Video documentaries",
+    "Photo documentaries",
+    "Prints",
+    "Corporate videos",
+    "Event Coverage",
+    "Media Consultancy",
   ];
   // const servivesProvided = [
   //   "Video documentaries",
@@ -35,7 +35,7 @@ function Hero({ setIntersecting }) {
           {servivesProvided.map((item, key) => (
             <li
               key={item + key}
-              className="text-[1.4rem] m:text-[2rem] md:text-[2.5rem] mmmd:text-[3.5rem] lg:text-[4rem] "
+              className="text-[1.4rem] m:text-[2rem] md:text-[2.5rem] mmmd:text-[3.5rem] lg:text -[5rem] "
             >
               <span>{item}</span>
             </li>

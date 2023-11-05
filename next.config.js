@@ -8,9 +8,13 @@ const nextConfig = {
         hostname: "bslthemes.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "i.ibb.co",
+        pathname: "/**",
+      },
     ],
-    domains: ["bslthemes.com", "source.unsplash.com"],
+    domains: ["bslthemes.com", "source.unsplash.com", "i.ibb.co"],
   },
 };
-
 module.exports = nextConfig;

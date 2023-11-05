@@ -66,11 +66,11 @@ function Navbar({ isvisible }) {
             <ul
               className={`Nav-menu  pt-[25px] md:pt-0 ${
                 isvisible ? "md:bg-[black] bg-white" : "bg-[#ffffff]"
-              } px-[30px] md:flex md:justify-between h-[100vh] md:h-[initial] md:w-[500px] w-[200px]`}
+              } px-[30px] md:flex md:justify-between h-[100vh] md:h-[initial] w-[200px] md:w-[500px] lg:w-[700px]`}
             >
               {NavMenuList.childList.map((item, key) => (
                 <li
-                  className={`nav-link py-2 md:py-0 ${
+                  className={`nav-link py-2 md:py-0 lg:text-[2rem] ${
                     isvisible ? "text-black md:text-[white]" : "text-black"
                   }`}
                   key={key}

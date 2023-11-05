@@ -1,50 +1,51 @@
-import { HiOutlineDocumentDuplicate } from "react-icons/hi";
-import { GoLightBulb } from "react-icons/go";
-import { IoIosColorWand, IoMdAnalytics } from "react-icons/io";
-import { AiOutlineAndroid } from "react-icons/ai";
+import { SiThemoviedatabase } from "react-icons/si";
+import { FaPhotoVideo } from "react-icons/fa";
+import { MdCorporateFare } from "react-icons/md";
+import { IoMdAnalytics } from "react-icons/io";
+import { TfiVideoClapper } from "react-icons/tfi";
 import { TfiCamera } from "react-icons/tfi";
 
 export const servicesData = [
   {
-    icon: HiOutlineDocumentDuplicate,
-    title: "UI/UX DESIGN",
+    icon: SiThemoviedatabase,
+    title: "Video documentaries",
+    details:
+      "We specialize in producing compelling video and photo documentaries that captivate audiences, tell engaging stories, and create lasting impressions.",
+    url: "",
+  },
+  {
+    icon: FaPhotoVideo,
+    title: "Photo documentaries",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
     url: "",
   },
   {
-    icon: GoLightBulb,
-    title: "BRAND IDENTITY",
+    icon: MdCorporateFare,
+    title: "Corporate videos",
     details:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
+      "We develop professional corporate videos tailored to suit the unique requirements of businesses and government agencies.",
     url: "",
   },
   {
-    icon: IoIosColorWand,
-    title: "WEB DESIGN",
-    details:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
-    url: "",
-  },
-  {
-    icon: AiOutlineAndroid,
-    title: "MOBILE APPS",
+    icon: TfiVideoClapper,
+    title: "Event Coverage",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
     url: "",
   },
   {
     icon: IoMdAnalytics,
-    title: "ANALYTICS",
+    title: "Media Consultancy",
     details:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
+      "With our expertise and industry insights, we provide comprehensive media consultancy services. From strategic planning to content development, distribution strategies, and audience engagement.",
     url: "",
   },
   {
     icon: TfiCamera,
-    title: "PHOTOGRAPHY",
+    title: "Prints",
     details:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
+      "Our team of skilled photographers and designers create visually stunning prints that showcase the essence of your story or brand.",
     url: "",
   },
 ];
