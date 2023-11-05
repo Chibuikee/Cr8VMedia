@@ -11,9 +11,10 @@ function RecentWorks() {
   const RecentItems = [
     { title: "All", url: "" },
     { title: "Branding", url: "" },
-    { title: "Mockups", url: "" },
-    { title: "UI Kits", url: "" },
+    { title: "Events", url: "" },
+    { title: "Photos", url: "" },
     { title: "Photography", url: "" },
+    { title: "Videos", url: "" },
   ];
 
   function moveItemToFirst(recentWorks, ClickedItem) {
