@@ -16,7 +16,7 @@ function Intro() {
           businesses and government agencies.
         </p>
         <h5 className="newset inline-block shadow-inner pt-[2px] text-[0.75rem] leading-[12px] cursor-pointer tracking-[0.2em] font-medium">
-          DOWNLOAD RESUME
+          DOWNLOAD BROCHURE
         </h5>
       </div>
     </section>
