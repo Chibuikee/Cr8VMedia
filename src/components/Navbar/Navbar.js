@@ -23,7 +23,9 @@ function Navbar({ isvisible }) {
       >
         <Link href="/">
           <h1
-            className={`logo ${isvisible ? "text-white" : "text-black"}`}
+            className={`logo lg:text-[1.5rem] inline-block ${
+              isvisible ? "text-white" : "text-black"
+            }`}
             translate="no"
           >
             CR8VIBE MEDIA
@@ -32,7 +34,7 @@ function Navbar({ isvisible }) {
         <div
           // pointerEvents is used to disable events on this elements so that elements below it can be clickable
           style={{ pointerEvents: "none" }}
-          className="md:w-[500px] bg-[transparent] overflow-hidden absolute  right-0 md:right-[15px] top-0 md:top-[30px]"
+          className="md:w-[500px] lg:w-[700px] bg-[transparent] overflow-hidden absolute  right-0 md:right-[15px] top-0 lg:top-[50px] md:top-[30px]"
         >
           <div
             onClick={() => setNavBarToggle(!navBarToggle)}
@@ -66,11 +68,11 @@ function Navbar({ isvisible }) {
             <ul
               className={`Nav-menu  pt-[25px] md:pt-0 ${
                 isvisible ? "md:bg-[black] bg-white" : "bg-[#ffffff]"
-              } px-[30px] md:flex md:justify-between h-[100vh] md:h-[initial] w-[200px] md:w-[500px] lg:w-[700px]`}
+              } px-[30px] md:flex md:justify-between h-[100vh] md:h-[initial] w-[200px] md:w-[500px] lg:w-[700px] `}
             >
               {NavMenuList.childList.map((item, key) => (
                 <li
-                  className={`nav-link py-2 md:py-0 lg:text-[2rem] ${
+                  className={`nav-link py-2 md:py-0 lg:text-[1.5rem] ${
                     isvisible ? "text-black md:text-[white]" : "text-black"
                   }`}
                   key={key}
